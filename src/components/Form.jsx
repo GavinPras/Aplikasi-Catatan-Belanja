@@ -10,9 +10,8 @@ export default function Form({ onAddItem }) {
     if (!name) return;
 
     const newItem = { name, quantity, checked: false, id: Date.now() };
-    onAddItem(newItem);
+    onAddItem(newItem);0
 
-    console.log(newItem);
     setName("");
     setQuantity(1);
   }
